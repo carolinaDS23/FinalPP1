@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listado de personal</title>
+    <%- include('head.ejs') %>
+</head>
+<body>
+    <%- include('navigation.ejs') %>
+    <h1>Listado de personal</h1>
+    <div class="container">
+        <% listPersonal.forEach(element => { %>
+            <div class="row">
+                <div class="col-md-4 mt-4">
+                    <%= element.nombre %>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+</body>
+</html>
