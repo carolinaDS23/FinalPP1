@@ -15,7 +15,18 @@ services:
     networks:
       - my_network #una red del contenedor de la aplicacion
 
- 
+  #servicio de la app Node.js
+  node_app:
+    image: carolinapp1/crudnode
+    container_name: mi_app_node #nombre del contenedor
+    ports:
+      - "3000:3000" 
+    depends_on:
+      - mysql # nuestra app dependa del servicio de mysql
+    networks:
+      - my_network #una red conecta con mysql
+    
+
     
 volumes:
   mysql-volume:
