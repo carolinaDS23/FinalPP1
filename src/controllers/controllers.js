@@ -82,19 +82,22 @@ const postDeletePersonal = (req, res, next) => {
     });
 };
 
+
 const buscarPersonal = (req, res, next) => {
-    res.render('busquedaPersonal', { title: "Buscar" });
+  res.render('buscarPersonal', { title: "Buscar" });
 };
 
 const buscarPersonalResultados = (req, res, next) => {
-    var db = req.app.get("db");
-    var keyword = req.body.keyword;
-    const query = 'SELECT personal.nombre, personal.email WHERE nombre LIKE ?';
-    db.query(query, [`%${keyword}%`], (err, rows) => {
-        if (err) throw err;
-        res.render('resultadosPersonal', { personal: rows, title: "Resultados" });
-    });
+  var db = req.app.get("db");
+  var keyword = req.body.keyword;
+  const query = 'SELECT nombre, email FROM personal WHERE nombre LIKE ?';
+  db.query(query, [`%${keyword}%`], (err, rows) => {
+    if (err) throw err;
+    console.log(rows); //  para verificar los datos
+    res.render('resultadosPersonal', { personal: rows, title: "Resultados" });
+});
 };
+
 
 //OFICINAS
 
@@ -193,7 +196,9 @@ const listOficina= (req, res, next) => {
 
 
 
-module.exports = { 
+
+  module.exports = {
+
     listPersonal,
     agregarPersonal,
     postAgregarPersonal,
@@ -203,6 +208,7 @@ module.exports = {
     postDeletePersonal,
     buscarPersonal,
     buscarPersonalResultados,
+  
 
 
     listOficina,

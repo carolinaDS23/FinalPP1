@@ -6,10 +6,12 @@
   <body>
     <h1>Lista de Personal</h1> 
     <ul>
-        <% personas.forEach(element => { %>
-            <li>
-                <%= element.nombre + " " + element.email + " " + element.denominacion %>
-            </li>
+        <% personal.forEach(element => { %> <!-- busca personas porque en el array del controlador se llama asi -->
+           
+          <li>
+             <%= element.nombre %> 
+          </li> <!--etiquetas out-->
+          
         <% }) %>
     </ul>
   </body>

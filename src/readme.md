@@ -1,1 +1,1 @@
-## Practica Profesionaliizante 1
+## Practica Profesionalizante 1

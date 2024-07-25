@@ -3,12 +3,23 @@
 
 <%- include('./head.ejs') %>
 
-    <body>
-        <form action="/deletePersonal/ <%= item.id %>" method="post">
-            <h1>Desea eliminar este registro de persona?</h1>
-            <button type="submit">Confirmar</button>
-        </form>
+<head>
+  <title>Borrar</title>
+  <link rel="stylesheet" href="/public/stylesheets/style.css">
+</head>
 
+    <body>
+        <form action="/deletePersonal/<%= item.id %>" method="post">
+            <h1>Desea eliminar este registro de persona?</h1>
+            <button type="submit">Eliminar</button>
+        </form>
+        
     </body>
 
 </html>
+
+
+
+
+
+
