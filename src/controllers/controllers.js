@@ -1,4 +1,4 @@
-// src/controllers/controllers.js
+
 
 const listPersonal = (req, res, next) => {
     const db = req.app.get("db");
@@ -93,7 +93,7 @@ const buscarPersonalResultados = (req, res, next) => {
   const query = 'SELECT nombre, email FROM personal WHERE nombre LIKE ?';
   db.query(query, [`%${keyword}%`], (err, rows) => {
     if (err) throw err;
-    console.log(rows); //  para verificar los datos
+    
     res.render('resultadosPersonal', { personal: rows, title: "Resultados" });
 });
 };
