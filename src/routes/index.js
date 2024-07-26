@@ -20,7 +20,7 @@ router.get('/agregarPersonal', controllers.agregarPersonal);
 router.post('/agregarPersonal', controllers.postAgregarPersonal);
 router.get('/editarPersonal/:id', controllers.getEditarPersonal);
 router.post('/updatePersonal/:id', controllers.postUpdatePersonal);
-router.get('/deletePersonal/:id', controllers.getDeletePersonal);
+
 router.post('/deletePersonal/:id', controllers.postDeletePersonal);
 router.get('/buscarPersonal', controllers.buscarPersonal);
 router.post('/buscarPersonal', controllers.buscarPersonalResultados);

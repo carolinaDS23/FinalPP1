@@ -7,9 +7,33 @@ a {
   color: #00B7FF;
 }
 
+/* Styles for the Empleados header */
+.empleados header {
+  background-color: #4CAF50; /* Background color */
+  color: white; /* Text color */
+  padding: 1em; /* Padding */
+  text-align: center; /* Centered text */
+  font-size: 2em; /* Font size */
+  border-radius: 8px; /* Rounded corners */
+  margin: 1em 0; /* Margin top and bottom */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .empleados header {
+    font-size: 1.5em; /* Smaller font size on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .empleados header {
+    font-size: 1.2em; /* Even smaller font size on very small screens */
+    padding: 0.5em; /* Less padding on very small screens */
+  }
+}
 
 .footer {
-  position: absolute;
+ 
   bottom: 0;
   width: 100%;
   height: 60px; /* Altura del footer */
