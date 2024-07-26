@@ -6,6 +6,8 @@
 
 ## URL github: https://github.com/carolinaDS23/FINAL
 
+### https://youtu.be/UpOmv-AghCc
+
 ## Proyecto CRUD con Express, NodeJs, MySQL y Docker 
 
 
@@ -100,6 +102,8 @@
 ![Descripción de la imagen](/src/imgreadme/12.jpg)
 
 ### En mi caso como mi sistema operativos es Windows, tuve que descargar docker desktop, luego realizamos una cuenta para loguearnos en docker hub y asi poder ingresar desde la terminal con docker login -u mi usuario y password, con docker image ls y docker ps -a nos permite ver si existe alguna imagen o contenedor en el caso que exista lo detenemos con docker stop y borramos con docker rm y con docker buil -t usuario/nombre y tags luego pusheamos. 
+
+
 
 ![Descripción de la imagen](/src/imgreadme/14.jpg)
 
